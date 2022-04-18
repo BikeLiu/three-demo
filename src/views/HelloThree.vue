@@ -46,7 +46,7 @@ export default {
       });
 
       this.renderer.setClearColor(0x000000, 0);
-      this.renderer.setSize(window.innerWidth, window.innerHeight);
+      this.renderer.setSize(window.innerWidth - 100, window.innerHeight - 100);
       this.renderer.setPixelRatio(window.devicePixelRatio);
 
       this.$refs.container.appendChild(this.renderer.domElement);
