@@ -7,7 +7,12 @@
 <script>
 import * as Three from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import img1 from "../assets/img/1.png";
+import img11 from "../assets/img/skybox_mx.png";
+import img12 from "../assets/img/skybox_px.png";
+import img13 from "../assets/img/skybox_my.png";
+import img21 from "../assets/img/skybox_py.png";
+import img22 from "../assets/img/skybox_mz.png";
+import img23 from "../assets/img/skybox_pz.png";
 
 const scene = new Three.Scene();
 
@@ -53,7 +58,7 @@ export default {
       let axes = new Three.AxesHelper(100);
       scene.add(axes);
 
-      const skyBox = [img1, img1, img1, img1, img1, img1];
+      const skyBox = [img11, img12, img13, img21, img22, img23];
 
       scene.background = new Three.CubeTextureLoader().load(skyBox);
     },
